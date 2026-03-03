@@ -109,12 +109,12 @@ ul {
 /* -- Hero Section -- */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background:
-        url('../images/hero-bg.webp') center center / cover no-repeat;
+        url('../images/hero-bg.webp') center 35% / cover no-repeat;
     overflow: hidden;
 }
 
@@ -180,7 +180,9 @@ ul {
 
 .hero-cta .arrow {
     display: inline-block;
-    margin-left: 0.3em;
+    margin-left: 0.4em;
+    font-size: 1.5em;
+    vertical-align: -0.05em;
     animation: bounce 2s infinite;
 }
 
@@ -376,8 +378,11 @@ ul {
 .about {
     position: relative;
     background:
-        url('../images/about-bg.jpg') center center / cover no-repeat;
-    padding: var(--spacing-xl) var(--spacing-lg);
+        url('../images/about-bg.jpg') center 60% / cover no-repeat;
+    padding: 6rem var(--spacing-lg);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -387,9 +392,9 @@ ul {
     inset: 0;
     background: linear-gradient(
         160deg,
-        rgba(20, 45, 75, 0.82) 0%,
-        rgba(30, 58, 95, 0.75) 40%,
-        rgba(20, 40, 65, 0.8) 100%
+        rgba(10, 30, 50, 0.4) 0%,
+        rgba(15, 40, 60, 0.3) 40%,
+        rgba(10, 25, 45, 0.35) 100%
     );
     pointer-events: none;
 }
@@ -402,19 +407,20 @@ ul {
 
 .about h2 {
     font-family: var(--font-heading);
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
     font-weight: 900;
     color: var(--color-gold);
     margin-bottom: var(--spacing-lg);
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .about p {
-    color: var(--color-text-light);
-    font-size: 1rem;
-    line-height: 1.8;
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.9;
     max-width: 700px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .about a {
